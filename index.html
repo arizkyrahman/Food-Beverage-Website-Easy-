@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>SEARCHING...</h3>
+    </div>
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">el.padrino</a>
+        </header>
+
+        <h1><span>THE BOSS</span> OF ALL BOSSES</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          maiores quos aut rerum odit, ab sed nam error aspernatur odio.
+        </p>
+
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter your city:</label>
+              <input type="text" name="city" id="city" />
+              <p>Example: "San Diego"</p>
+            </div>
+
+            <input type="button" value="FIND FOOD NOW" id="cta-btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Authentic. Awesome.</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id amet
+          soluta temporibus quis reprehenderit ea, voluptatum provident illo.
+          Accusantium laboriosam voluptatem ipsum harum quia nobis minima
+          officia eius doloribus atque ad, sunt fuga dolorum pariatur tempora
+          laudantium tempore libero tenetur rerum deleniti, unde neque dolores?
+          Deleniti vel facilis sequi molestias.
+        </p>
+      </div>
+      <img src="Images/food2.jpg" alt="Delicious Dessert" />
+    </section>
+
+    <script>
+      let btn = document.getElementById("cta-btn");
+      let overlay = document.getElementById("overlay");
+
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        overlay.classList.add("animate-overlay");
+      });
+    </script>
+  </body>
+</html>
